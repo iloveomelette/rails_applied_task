@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+i = 1
+
+50.times do
+  Post.create!(body: "投稿_#{i}")
+  i += 1
+end
+
+puts "初期データの入力に成功しました！"
